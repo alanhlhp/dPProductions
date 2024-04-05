@@ -1,0 +1,26 @@
+<nav class="header navbar navbar-expand-lg navbar-light fixed-top" [ngClass]="{'header--inverse': theme === headerThemes.INVERSE }" (scroll)="onWindowScroll()">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home"><i class="bi bi-apple"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav header-menu">
+          <!-- <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about-us" [routerLinkActive]="['active', 'header-menu--active']">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" [routerLinkActive]="['active', 'header-menu--active']">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="topnav-right header-right">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-youtube"></i>
+      </div>
+    </div>
+  </nav>

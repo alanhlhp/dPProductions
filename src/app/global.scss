@@ -1,0 +1,40 @@
+$primary: #191919;
+$primary-2: #333;
+$primary-3: #7e7e7e;
+$gold: #bda562;
+$white: #fff;
+
+$layout-xs: 300px;
+$layout-sm: 400px;
+$layout-md: 500px;
+$layout-lg: 700px;
+$layout-xl: 800px;
+$layout-xl-2: 900px;
+
+.app-fom {
+    input, textarea {
+        min-height: 3rem;
+        background-color: rgba($color: $primary-3, $alpha: 0.1);
+        border: 0;
+        border-radius: 3px;
+        padding: 1rem;
+    }
+
+    button {
+        background-color: $primary-2;
+        color: $white;
+        border-radius: 3px;
+    }
+    
+    .button {
+        &--lg {
+            height: 3rem;
+        }
+    }
+    
+    .textarea {
+        &--lg {
+            height: 10rem;
+        }
+    }
+}

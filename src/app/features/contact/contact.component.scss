@@ -1,0 +1,65 @@
+@import '../../global.scss';
+
+.contact {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+
+    &-map {
+        height: $layout-md;
+        background-image: url('../../../assets/images/black.png');
+    }
+
+    &-body {
+        min-height: $layout-xl;
+        display: flex;
+        padding: 5rem 21rem;
+        
+        &-info {
+            width: 50%;
+            height: 100%;
+        }
+
+        &-form {
+            width: 50%;
+            height: 100%;
+
+            &-body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-row {
+                display: flex;
+                gap: 2rem;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+
+                &--center {
+                    justify-content: center;
+                }
+            }
+            &-column {
+                flex: 1;
+            }
+        }
+
+        &-row {
+            display: flex;
+            gap: 1rem;
+        }
+
+        &-container {
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        i {
+            font-size: 1.5rem;
+            color: $gold;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../global.scss';
+
+.page {
+    min-height: 100%;
+    width: 100%;
+
+    &-body {
+        min-height: 100%;
+        width: 100%;
+        position: relative;
+        padding-bottom: $layout-sm; // Size of footer
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../global.scss';
+
+.about-us {
+    height: 100%;
+
+    &-title {
+        height: $layout-sm;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary;
+        color: $white;
+    }
+
+    &-body {
+        height: $layout-xl-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,80 @@
+@import '../../global.scss';
+
+.footer {
+    background-color: $primary;
+    width: 100%;
+    height: $layout-sm;
+    color: $white;
+    padding: 2rem 21rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+
+    &-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    &-column {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        align-self: baseline;
+        padding: 1rem;
+        color: $primary-3;
+
+        &--lg {
+            width: 33%;
+        }
+
+        &--sm {
+            width: 20%;
+        }
+
+        &-title {
+            margin-bottom: 2rem;
+            color: $white;
+        }
+    }
+
+    &-row {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        font-size: 14px;
+        color: $primary-3;
+    }
+
+    &-logo {
+        min-height: 3rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all .2s ease-in-out;
+    
+    &-button {
+        background-color: rgba($color: $primary, $alpha: 0.5);
+        border: 0;
+    }
+
+    &-icon {
+        color: white !important;
+        font-weight: 500;
+    }
+}
