@@ -37,4 +37,12 @@ $layout-xl-2: 900px;
             height: 10rem;
         }
     }
+
+    input.ng-invalid.ng-touched {
+        border: red 1px solid;
+    }
+
+    input.ng-valid.ng-touched {
+        border: $gold 1px solid;
+    }
 }

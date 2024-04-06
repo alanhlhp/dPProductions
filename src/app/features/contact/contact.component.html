@@ -54,19 +54,19 @@
             </div>
             <div class="contact-body-form">
                 <h1>Get in touch</h1>
-                <div class="contact-body-form-body app-fom">
+                <div class="contact-body-form-body app-fom" [formGroup]="form">
                     <div class="contact-body-form-row">
-                        <input class="contact-body-form-column" type="text" placeholder="Your name *"/>
-                        <input class="contact-body-form-column" type="text" placeholder="Your email *"/>
+                        <input class="contact-body-form-column" type="text" placeholder="Your name *" formControlName="name"/>
+                        <input class="contact-body-form-column" type="text" placeholder="Your email *" formControlName="email"/>
                     </div>
                     <div class="contact-body-form-row">
-                        <input class="contact-body-form-column" type="text" placeholder="Subject"/>
+                        <input class="contact-body-form-column" type="text" placeholder="Subject" formControlName="subject"/>
                     </div>
                     <div class="contact-body-form-row">
-                        <textarea class="contact-body-form-column textarea--lg" type="text" placeholder="Your message ..."></textarea>
+                        <textarea class="contact-body-form-column textarea--lg" type="text" placeholder="Your message ..." formControlName="message"></textarea>
                     </div>
                     <div class="contact-body-form-row contact-body-form-row--center">
-                        <button type="button" class="btn button--lg">Send</button>
+                        <button type="button" class="btn button--lg" (click)="sendEmail()" [disabled]="form.status !== 'VALID'">Send</button>
                     </div>
                 </div>
             </div>

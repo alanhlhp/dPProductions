@@ -6,6 +6,7 @@ import { CoreModule } from "./core/core.module";
 import { FeaturesModule } from "./features/features.module";
 import { AppRoutingModule } from "./app-routing.module";
 import { RouterModule, RouterOutlet } from "@angular/router";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
     declarations: [AppComponent],
@@ -13,6 +14,7 @@ import { RouterModule, RouterOutlet } from "@angular/router";
         CommonModule,
         BrowserModule, 
         RouterModule,
+        HttpClientModule,
 
         AppRoutingModule, 
         CoreModule,
